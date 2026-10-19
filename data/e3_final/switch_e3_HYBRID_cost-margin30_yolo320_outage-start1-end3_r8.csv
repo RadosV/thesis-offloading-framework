@@ -1,0 +1,6 @@
+t,run_id,from_brain,to_brain,cloud_silence_s,t_rel,cloud_stale_ms,local_stale_ms,reason,policy_state
+1790550039.6587,e3_HYBRID_cost-margin30_yolo320_outage-start1-end3_r8,LOCAL,CLOUD,0.1710,0.200,219.2,1327.4,cloud fresher,c=203.6;l=1209.4;rto=0.793
+1790550040.9086,e3_HYBRID_cost-margin30_yolo320_outage-start1-end3_r8,CLOUD,LOCAL,0.4969,1.450,550.0,1718.9,silence,c=385.8;l=1557.2;rto=0.482
+1790550042.8088,e3_HYBRID_cost-margin30_yolo320_outage-start1-end3_r8,LOCAL,CLOUD,0.0630,3.350,115.5,1700.2,cloud fresher,c=603.8;l=1553.5;rto=0.471
+1790550044.0586,e3_HYBRID_cost-margin30_yolo320_outage-start1-end3_r8,CLOUD,LOCAL,0.4278,4.600,484.5,1961.0,silence,c=332.8;l=1775.4;rto=0.385
+1790550045.0087,e3_HYBRID_cost-margin30_yolo320_outage-start1-end3_r8,LOCAL,CLOUD,0.0804,5.550,122.6,1889.4,cloud fresher,c=421.3;l=1704.5;rto=0.422

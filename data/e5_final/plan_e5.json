@@ -1,0 +1,27 @@
+{
+ "seed": 2026,
+ "battery_v_start": "8",
+ "started": "2026-09-28 15:37:15",
+ "order": [
+  "e5_HYBRID_cost-margin30_yolo320_stable_netem_r1",
+  "e5_HYBRID_cost-margin30_yolo320_stable_netem_r3",
+  "e5_HYBRID_cost-margin30_yolo320_stable_netem_r6",
+  "e5_HYBRID_cost-margin30_yolo320_stable_netem_r10",
+  "e5_CLOUD_yolo320_stable_netem_r8",
+  "e5_CLOUD_yolo320_stable_netem_r9",
+  "e5_HYBRID_cost-margin30_yolo320_stable_netem_r8",
+  "e5_CLOUD_yolo320_stable_netem_r10",
+  "e5_HYBRID_cost-margin30_yolo320_stable_netem_r9",
+  "e5_HYBRID_cost-margin30_yolo320_stable_netem_r2",
+  "e5_CLOUD_yolo320_stable_netem_r3",
+  "e5_CLOUD_yolo320_stable_netem_r4",
+  "e5_CLOUD_yolo320_stable_netem_r2",
+  "e5_CLOUD_yolo320_stable_netem_r1",
+  "e5_HYBRID_cost-margin30_yolo320_stable_netem_r5",
+  "e5_HYBRID_cost-margin30_yolo320_stable_netem_r4",
+  "e5_CLOUD_yolo320_stable_netem_r7",
+  "e5_CLOUD_yolo320_stable_netem_r6",
+  "e5_CLOUD_yolo320_stable_netem_r5",
+  "e5_HYBRID_cost-margin30_yolo320_stable_netem_r7"
+ ]
+}

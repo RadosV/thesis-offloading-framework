@@ -1,0 +1,8 @@
+numpy
+paho-mqtt
+imagezmq
+pyzmq
+pigpio
+psutil
+# opencv: install python3-opencv (4.5.5) via apt
+# influxdb-client  (optional, only if INFLUX_TOKEN is set)

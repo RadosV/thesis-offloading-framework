@@ -1,0 +1,6 @@
+t,run_id,from_brain,to_brain,cloud_silence_s,t_rel,cloud_stale_ms,local_stale_ms,reason,policy_state
+1790642531.4905,e5_HYBRID_cost-margin30_yolo320_stable_netem_r8,LOCAL,CLOUD,0.0000,0.200,172.6,1861.2,cloud fresher,c=339.1;l=1742.9;rto=0.238
+1790642531.7407,e5_HYBRID_cost-margin30_yolo320_stable_netem_r8,CLOUD,LOCAL,0.2502,0.450,422.8,2111.4,silence,c=342.9;l=1938.2;rto=0.238
+1790642531.9901,e5_HYBRID_cost-margin30_yolo320_stable_netem_r8,LOCAL,CLOUD,0.0000,0.700,224.0,2360.8,cloud fresher,c=321.7;l=2169.7;rto=0.490
+1790642532.4905,e5_HYBRID_cost-margin30_yolo320_stable_netem_r8,CLOUD,LOCAL,0.5004,1.200,724.4,1445.2,silence,c=556.4;l=1710.1;rto=0.490
+1790642532.9896,e5_HYBRID_cost-margin30_yolo320_stable_netem_r8,LOCAL,CLOUD,0.1491,1.699,557.1,1944.3,cloud fresher,c=600.3;l=1794.9;rto=0.969

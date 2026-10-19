@@ -1,0 +1,60 @@
+{
+  "version": 2,
+  "run_id": "e3a_CLOUD_aruco_spike-ms1500-start1-end3.5_r9",
+  "host": "raspberrypi",
+  "strategy": "CLOUD",
+  "policy": null,
+  "standby": null,
+  "perception": "aruco:id=0",
+  "net_profile": "spike:ms=1500,start=1,end=3.5",
+  "inject_ms": 0.0,
+  "net_cond": "spike:ms=1500,start=1,end=3.5",
+  "jpeg_q": 80,
+  "loop_hz": 20.0,
+  "stream_hz": 20.0,
+  "max_s": 25.0,
+  "arrive_w": 86.0,
+  "arrive_k": 3,
+  "det_hold_ms": 0.0,
+  "seed": 18303,
+  "source": "0",
+  "capture": "1280x720",
+  "crop": 0.3,
+  "capture_size": [
+    1280,
+    720
+  ],
+  "pc_ip": "192.168.2.101",
+  "t_start": 1790652018.8299,
+  "duration_s": 18.071,
+  "stop_reason": "ctrl-c",
+  "aborted": null,
+  "t_arrive": null,
+  "n_cycles": 342,
+  "n_switches": 0,
+  "n_held": 0,
+  "mean_loop_dt": 0.0499,
+  "cloud": {
+    "arrived": 90,
+    "dropped": 0,
+    "released": 82,
+    "mean_infer_ms": 1.73
+  },
+  "stream": {
+    "sent": 90,
+    "failed": 0,
+    "bytes": 670779,
+    "mbit_s": 0.297
+  },
+  "resources": {
+    "enabled": true,
+    "samples": 89,
+    "throttled_start": "0x0",
+    "throttled_end": "0x0",
+    "cpu_pct": 14.7,
+    "proc_cpu_pct": 34.9,
+    "temp_max_c": 47.774,
+    "tx_mbit_s": 0.006,
+    "rx_mbit_s": 0.009
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "version": 2,
+  "run_id": "e1_LOCAL_aruco_r2",
+  "host": "raspberrypi",
+  "strategy": "LOCAL",
+  "policy": null,
+  "standby": null,
+  "perception": "aruco:id=0",
+  "net_profile": "stable",
+  "inject_ms": 0.0,
+  "net_cond": "stable",
+  "jpeg_q": 80,
+  "loop_hz": 20.0,
+  "stream_hz": 20.0,
+  "max_s": 60.0,
+  "arrive_w": 0.0,
+  "arrive_k": 3,
+  "det_hold_ms": 0.0,
+  "seed": 26082,
+  "source": "0",
+  "capture": "1280x720",
+  "crop": 0.3,
+  "capture_size": [
+    1280,
+    720
+  ],
+  "pc_ip": "192.168.2.101",
+  "t_start": 1790535894.5963206,
+  "duration_s": 61.044,
+  "stop_reason": "max_s",
+  "aborted": null,
+  "t_arrive": null,
+  "n_cycles": 1200,
+  "n_switches": 0,
+  "n_held": 0,
+  "mean_loop_dt": 0.05,
+  "cloud": {
+    "arrived": 0,
+    "dropped": 0,
+    "released": 0,
+    "mean_infer_ms": 0.0
+  },
+  "local": {
+    "done": 296,
+    "mean_infer_ms": 12.0,
+    "backend": "cv2"
+  },
+  "resources": {
+    "enabled": true,
+    "samples": 300,
+    "throttled_start": "0xd0000",
+    "throttled_end": "0xd0000",
+    "cpu_pct": 14.0,
+    "proc_cpu_pct": 47.9,
+    "temp_max_c": 53.154,
+    "tx_mbit_s": 0.0,
+    "rx_mbit_s": 0.001
+  }
+}

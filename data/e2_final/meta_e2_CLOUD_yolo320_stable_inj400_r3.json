@@ -1,0 +1,60 @@
+{
+  "version": 2,
+  "run_id": "e2_CLOUD_yolo320_stable_inj400_r3",
+  "host": "raspberrypi",
+  "strategy": "CLOUD",
+  "policy": null,
+  "standby": null,
+  "perception": "yolo:320,cls=11,conf=0.2,arch=5",
+  "net_profile": "stable",
+  "inject_ms": 400.0,
+  "net_cond": "stable",
+  "jpeg_q": 80,
+  "loop_hz": 20.0,
+  "stream_hz": 20.0,
+  "max_s": 25.0,
+  "arrive_w": 150.0,
+  "arrive_k": 1,
+  "det_hold_ms": 1000.0,
+  "seed": 24416,
+  "source": "0",
+  "capture": "1280x720",
+  "crop": 0.3,
+  "capture_size": [
+    1280,
+    720
+  ],
+  "pc_ip": "192.168.2.101",
+  "t_start": 1789995187.6880002,
+  "duration_s": 5.744,
+  "stop_reason": "arrived",
+  "aborted": null,
+  "t_arrive": 4.567,
+  "n_cycles": 93,
+  "n_switches": 0,
+  "n_held": 1,
+  "mean_loop_dt": 0.0493,
+  "cloud": {
+    "arrived": 16,
+    "dropped": 0,
+    "released": 12,
+    "mean_infer_ms": 25.75
+  },
+  "stream": {
+    "sent": 16,
+    "failed": 0,
+    "bytes": 114505,
+    "mbit_s": 0.261
+  },
+  "resources": {
+    "enabled": true,
+    "samples": 29,
+    "throttled_start": "0x80000",
+    "throttled_end": "0x80000",
+    "cpu_pct": 11.4,
+    "proc_cpu_pct": 30.5,
+    "temp_max_c": 49.054,
+    "tx_mbit_s": 0.274,
+    "rx_mbit_s": 0.009
+  }
+}

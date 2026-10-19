@@ -1,0 +1,4 @@
+t,run_id,from_brain,to_brain,cloud_silence_s,t_rel,cloud_stale_ms,local_stale_ms,reason,policy_state
+1790545342.6295,e3_HYBRID_ewma-hi1300-lo900_yolo320_spike-ms1500-start1-end3.5_r10,LOCAL,CLOUD,0.0000,0.200,91.8,1371.2,recovered,ewma=137.3
+1790545343.8294,e3_HYBRID_ewma-hi1300-lo900_yolo320_spike-ms1500-start1-end3.5_r10,CLOUD,LOCAL,0.5389,1.400,582.1,1718.6,silence,ewma=416.8
+1790545346.4794,e3_HYBRID_ewma-hi1300-lo900_yolo320_spike-ms1500-start1-end3.5_r10,LOCAL,CLOUD,0.1531,4.050,205.7,1534.0,recovered,ewma=409.2

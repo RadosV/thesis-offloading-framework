@@ -1,0 +1,4 @@
+t,run_id,from_brain,to_brain,cloud_silence_s,t_rel,cloud_stale_ms,local_stale_ms,reason,policy_state
+1790651340.8309,e3a_HYBRID_timeout-tau0.5_aruco_spike-ms1500-start1-end3.5_r2,LOCAL,CLOUD,0.0000,0.000,17.2,17.2,cloud alive,
+1790651342.1812,e3a_HYBRID_timeout-tau0.5_aruco_spike-ms1500-start1-end3.5_r2,CLOUD,LOCAL,0.5005,1.350,526.1,32.3,silence,
+1790651343.4308,e3a_HYBRID_timeout-tau0.5_aruco_spike-ms1500-start1-end3.5_r2,LOCAL,CLOUD,0.0000,2.600,1581.8,57.3,cloud alive,

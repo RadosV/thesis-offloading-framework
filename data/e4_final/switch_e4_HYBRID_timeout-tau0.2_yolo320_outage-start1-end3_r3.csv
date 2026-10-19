@@ -1,0 +1,8 @@
+t,run_id,from_brain,to_brain,cloud_silence_s,t_rel,cloud_stale_ms,local_stale_ms,reason,policy_state
+1790645286.8887,e4_HYBRID_timeout-tau0.2_yolo320_outage-start1-end3_r3,LOCAL,CLOUD,0.0000,0.000,73.4,1116.9,cloud alive,
+1790645287.0889,e4_HYBRID_timeout-tau0.2_yolo320_outage-start1-end3_r3,CLOUD,LOCAL,0.2002,0.200,273.6,1317.1,silence,
+1790645287.1387,e4_HYBRID_timeout-tau0.2_yolo320_outage-start1-end3_r3,LOCAL,CLOUD,0.0000,0.250,100.0,1366.9,cloud alive,
+1790645287.5387,e4_HYBRID_timeout-tau0.2_yolo320_outage-start1-end3_r3,CLOUD,LOCAL,0.2004,0.650,282.3,1766.9,silence,
+1790645287.6386,e4_HYBRID_timeout-tau0.2_yolo320_outage-start1-end3_r3,LOCAL,CLOUD,0.0000,0.750,146.6,1866.8,cloud alive,
+1790645287.9388,e4_HYBRID_timeout-tau0.2_yolo320_outage-start1-end3_r3,CLOUD,LOCAL,0.2005,1.050,284.5,1123.5,silence,
+1790645290.1892,e4_HYBRID_timeout-tau0.2_yolo320_outage-start1-end3_r3,LOCAL,CLOUD,0.0000,3.300,127.5,1388.6,cloud alive,

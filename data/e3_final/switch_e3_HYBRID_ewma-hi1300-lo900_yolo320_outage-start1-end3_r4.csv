@@ -1,0 +1,6 @@
+t,run_id,from_brain,to_brain,cloud_silence_s,t_rel,cloud_stale_ms,local_stale_ms,reason,policy_state
+1790550289.2040,e3_HYBRID_ewma-hi1300-lo900_yolo320_outage-start1-end3_r4,LOCAL,CLOUD,0.0000,0.201,88.0,1381.9,recovered,ewma=161.8
+1790550290.3540,e3_HYBRID_ewma-hi1300-lo900_yolo320_outage-start1-end3_r4,CLOUD,LOCAL,0.5116,1.351,553.7,1716.8,silence,ewma=386.4
+1790550292.5023,e3_HYBRID_ewma-hi1300-lo900_yolo320_outage-start1-end3_r4,LOCAL,CLOUD,0.0000,3.499,68.9,2017.0,recovered,ewma=390.2
+1790550293.2530,e3_HYBRID_ewma-hi1300-lo900_yolo320_outage-start1-end3_r4,CLOUD,LOCAL,0.5172,4.250,574.0,1879.4,silence,ewma=413.7
+1790550293.8023,e3_HYBRID_ewma-hi1300-lo900_yolo320_outage-start1-end3_r4,LOCAL,CLOUD,0.0987,4.799,228.8,1368.9,recovered,ewma=385.7

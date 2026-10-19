@@ -1,0 +1,6 @@
+numpy
+opencv-python
+paho-mqtt
+imagezmq
+pyzmq
+psutil

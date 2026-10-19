@@ -1,0 +1,4 @@
+t,run_id,from_brain,to_brain,cloud_silence_s,t_rel,cloud_stale_ms,local_stale_ms,reason,policy_state
+1790651046.7718,e3a_HYBRID_timeout-tau0.5_aruco_outage-start1-end3_r5,LOCAL,CLOUD,0.0000,0.000,32.9,32.9,cloud alive,
+1790651048.3214,e3a_HYBRID_timeout-tau0.5_aruco_outage-start1-end3_r5,CLOUD,LOCAL,0.5493,1.550,658.6,78.4,silence,
+1790651049.9719,e3a_HYBRID_timeout-tau0.5_aruco_outage-start1-end3_r5,LOCAL,CLOUD,0.0000,3.200,61.9,62.0,cloud alive,

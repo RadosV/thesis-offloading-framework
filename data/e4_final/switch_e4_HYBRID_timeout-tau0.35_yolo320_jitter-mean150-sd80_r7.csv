@@ -1,0 +1,4 @@
+t,run_id,from_brain,to_brain,cloud_silence_s,t_rel,cloud_stale_ms,local_stale_ms,reason,policy_state
+1790644765.5509,e4_HYBRID_timeout-tau0.35_yolo320_jitter-mean150-sd80_r7,LOCAL,CLOUD,0.0000,0.000,70.6,1288.7,cloud alive,
+1790644765.9015,e4_HYBRID_timeout-tau0.35_yolo320_jitter-mean150-sd80_r7,CLOUD,LOCAL,0.3506,0.351,421.2,1639.3,silence,
+1790644765.9511,e4_HYBRID_timeout-tau0.35_yolo320_jitter-mean150-sd80_r7,LOCAL,CLOUD,0.0000,0.400,240.6,1688.9,cloud alive,

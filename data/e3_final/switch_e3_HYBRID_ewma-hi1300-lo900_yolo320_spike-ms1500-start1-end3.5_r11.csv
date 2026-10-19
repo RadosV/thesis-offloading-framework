@@ -1,0 +1,6 @@
+t,run_id,from_brain,to_brain,cloud_silence_s,t_rel,cloud_stale_ms,local_stale_ms,reason,policy_state
+1790551567.2509,e3_HYBRID_ewma-hi1300-lo900_yolo320_spike-ms1500-start1-end3.5_r11,LOCAL,CLOUD,0.0000,0.200,75.5,1359.9,recovered,ewma=145.0
+1790551568.6010,e3_HYBRID_ewma-hi1300-lo900_yolo320_spike-ms1500-start1-end3.5_r11,CLOUD,LOCAL,0.5298,1.550,583.3,1856.9,silence,ewma=411.8
+1790551571.0510,e3_HYBRID_ewma-hi1300-lo900_yolo320_spike-ms1500-start1-end3.5_r11,LOCAL,CLOUD,0.3620,4.000,395.9,1306.8,recovered,ewma=517.7
+1790551571.2010,e3_HYBRID_ewma-hi1300-lo900_yolo320_spike-ms1500-start1-end3.5_r11,CLOUD,LOCAL,0.5120,4.150,545.9,1456.8,silence,ewma=510.7
+1790551571.7510,e3_HYBRID_ewma-hi1300-lo900_yolo320_spike-ms1500-start1-end3.5_r11,LOCAL,CLOUD,0.1309,4.700,192.7,2006.8,recovered,ewma=347.7

@@ -1,0 +1,12 @@
+t,run_id,from_brain,to_brain,cloud_silence_s,t_rel,cloud_stale_ms,local_stale_ms,reason,policy_state
+1790645379.2016,e4_HYBRID_timeout-tau0.2_yolo320_jitter-mean150-sd80_r7,LOCAL,CLOUD,0.0000,0.000,73.1,1162.6,cloud alive,
+1790645379.4525,e4_HYBRID_timeout-tau0.2_yolo320_jitter-mean150-sd80_r7,CLOUD,LOCAL,0.2509,0.251,324.0,1413.5,silence,
+1790645379.6015,e4_HYBRID_timeout-tau0.2_yolo320_jitter-mean150-sd80_r7,LOCAL,CLOUD,0.0000,0.400,255.9,1562.5,cloud alive,
+1790645380.2017,e4_HYBRID_timeout-tau0.2_yolo320_jitter-mean150-sd80_r7,CLOUD,LOCAL,0.2012,1.000,414.5,1073.2,silence,
+1790645380.3011,e4_HYBRID_timeout-tau0.2_yolo320_jitter-mean150-sd80_r7,LOCAL,CLOUD,0.0000,1.099,271.4,1172.6,cloud alive,
+1790645380.6509,e4_HYBRID_timeout-tau0.2_yolo320_jitter-mean150-sd80_r7,CLOUD,LOCAL,0.2497,1.449,481.2,1522.4,silence,
+1790645380.7510,e4_HYBRID_timeout-tau0.2_yolo320_jitter-mean150-sd80_r7,LOCAL,CLOUD,0.0000,1.549,337.9,1622.5,cloud alive,
+1790645381.2011,e4_HYBRID_timeout-tau0.2_yolo320_jitter-mean150-sd80_r7,CLOUD,LOCAL,0.2494,2.000,489.1,1171.4,silence,
+1790645381.3014,e4_HYBRID_timeout-tau0.2_yolo320_jitter-mean150-sd80_r7,LOCAL,CLOUD,0.0000,2.100,425.1,1271.7,cloud alive,
+1790645381.8515,e4_HYBRID_timeout-tau0.2_yolo320_jitter-mean150-sd80_r7,CLOUD,LOCAL,0.2002,2.650,315.7,1821.8,silence,
+1790645382.0515,e4_HYBRID_timeout-tau0.2_yolo320_jitter-mean150-sd80_r7,LOCAL,CLOUD,0.0000,2.850,311.6,1175.2,cloud alive,

@@ -1,0 +1,136 @@
+run_id,time,start_side,manual_success,power_w,note
+e3_CLOUD_yolo320_spike-ms1500-start1-end3.5_r11,2026-09-27 23:30:57,LEFT,1,,
+e3_CLOUD_yolo320_outage-start1-end3_r2,2026-09-27 23:31:43,RIGHT,1,,
+e3_HYBRID_timeout-tau0.5_yolo320_outage-start1-end3_r5,2026-09-27 23:32:19,LEFT,1,,
+e3_CLOUD_yolo320_spike-ms1500-start1-end3.5_r10,2026-09-27 23:32:57,RIGHT,1,,
+e3_HYBRID_timeout-tau0.5_yolo320_spike-ms1500-start1-end3.5_r14,2026-09-27 23:33:53,RIGHT,1,,
+e3_HYBRID_cost-margin30_yolo320_outage-start1-end3_r10,2026-09-27 23:34:40,RIGHT,1,,
+e3_CLOUD_yolo320_spike-ms1500-start1-end3.5_r4,2026-09-27 23:35:24,RIGHT,1,,
+e3_CLOUD_yolo320_outage-start1-end3_r4,2026-09-27 23:36:24,RIGHT,1,,
+e3_HYBRID_ewma-hi1300-lo900_yolo320_spike-ms1500-start1-end3.5_r3,2026-09-27 23:37:07,LEFT,1,,
+e3_HYBRID_cost-margin30_yolo320_spike-ms1500-start1-end3.5_r5,2026-09-27 23:37:54,LEFT,1,,
+e3_LOCAL_yolo320_r12,2026-09-27 23:38:40,RIGHT,1,,
+e3_CLOUD_yolo320_spike-ms1500-start1-end3.5_r2,2026-09-27 23:39:33,RIGHT,1,,
+e3_HYBRID_cost-margin30_yolo320_spike-ms1500-start1-end3.5_r4,2026-09-27 23:40:13,RIGHT,1,,
+e3_CLOUD_yolo320_outage-start1-end3_r14,2026-09-27 23:40:59,RIGHT,1,,
+e3_CLOUD_yolo320_spike-ms1500-start1-end3.5_r12,2026-09-27 23:41:51,RIGHT,0,,
+e3_HYBRID_ewma-hi1300-lo900_yolo320_spike-ms1500-start1-end3.5_r10,2026-09-27 23:42:38,RIGHT,1,,
+e3_HYBRID_timeout-tau0.5_yolo320_spike-ms1500-start1-end3.5_r13,2026-09-27 23:43:38,LEFT,1,,
+e3_LOCAL_yolo320_r3,2026-09-27 23:44:11,LEFT,1,,
+e3_CLOUD_yolo320_outage-start1-end3_r6,2026-09-27 23:44:49,RIGHT,0,,turned away from sign
+e3_LOCAL_yolo320_r13,2026-09-27 23:45:49,LEFT,1,,
+e3_CLOUD_yolo320_outage-start1-end3_r13,2026-09-27 23:46:24,LEFT,0,,turned away from sign
+e3_CLOUD_yolo320_outage-start1-end3_r8,2026-09-27 23:47:09,RIGHT,0,,stopped and did not start again
+e3_HYBRID_timeout-tau0.5_yolo320_outage-start1-end3_r4,2026-09-27 23:47:43,RIGHT,1,,
+e3_CLOUD_yolo320_outage-start1-end3_r1,2026-09-27 23:48:33,LEFT,1,,
+e3_HYBRID_ewma-hi1300-lo900_yolo320_spike-ms1500-start1-end3.5_r7,2026-09-27 23:50:28,LEFT,1,,
+e3_HYBRID_ewma-hi1300-lo900_yolo320_outage-start1-end3_r2,2026-09-27 23:51:29,RIGHT,0,,stopped and did not start again
+e3_CLOUD_yolo320_spike-ms1500-start1-end3.5_r13,2026-09-27 23:52:30,LEFT,1,,"stopped for a while, then found sign"
+e3_HYBRID_timeout-tau0.5_yolo320_spike-ms1500-start1-end3.5_r8,2026-09-27 23:53:15,RIGHT,0,,lost it after spike
+e3_CLOUD_yolo320_outage-start1-end3_r12,2026-09-27 23:53:56,RIGHT,0,,lost sign
+e3_HYBRID_cost-margin30_yolo320_outage-start1-end3_r5,2026-09-27 23:54:37,LEFT,1,,
+e3_HYBRID_ewma-hi1300-lo900_yolo320_spike-ms1500-start1-end3.5_r15,2026-09-27 23:57:24,LEFT,1,,
+e3_HYBRID_cost-margin30_yolo320_outage-start1-end3_r11,2026-09-27 23:57:53,LEFT,1,,
+e3_HYBRID_cost-margin30_yolo320_outage-start1-end3_r3,2026-09-27 23:58:35,LEFT,1,,
+e3_HYBRID_timeout-tau0.5_yolo320_spike-ms1500-start1-end3.5_r4,2026-09-27 23:59:28,RIGHT,1,,
+e3_LOCAL_yolo320_r2,2026-09-28 00:00:08,RIGHT,1,,
+e3_CLOUD_yolo320_outage-start1-end3_r3,2026-09-28 00:00:50,LEFT,1,,
+e3_HYBRID_ewma-hi1300-lo900_yolo320_spike-ms1500-start1-end3.5_r12,2026-09-28 00:01:48,RIGHT,1,,
+e3_HYBRID_cost-margin30_yolo320_spike-ms1500-start1-end3.5_r11,2026-09-28 00:02:35,LEFT,1,,
+e3_HYBRID_ewma-hi1300-lo900_yolo320_outage-start1-end3_r7,2026-09-28 00:03:20,LEFT,1,,
+e3_CLOUD_yolo320_spike-ms1500-start1-end3.5_r8,2026-09-28 00:04:05,RIGHT,0,,stopped and did not start again
+e3_HYBRID_timeout-tau0.5_yolo320_outage-start1-end3_r15,2026-09-28 00:05:42,LEFT,1,,
+e3_CLOUD_yolo320_spike-ms1500-start1-end3.5_r3,2026-09-28 00:06:39,LEFT,1,,"slow, stopped in the middle"
+e3_CLOUD_yolo320_spike-ms1500-start1-end3.5_r6,2026-09-28 00:07:28,RIGHT,0,,stopped and did not start again
+e3_HYBRID_cost-margin30_yolo320_outage-start1-end3_r12,2026-09-28 00:08:18,RIGHT,1,,
+e3_HYBRID_cost-margin30_yolo320_outage-start1-end3_r14,2026-09-28 00:08:58,RIGHT,1,,
+e3_HYBRID_ewma-hi1300-lo900_yolo320_spike-ms1500-start1-end3.5_r1,2026-09-28 00:10:03,LEFT,1,,
+e3_CLOUD_yolo320_spike-ms1500-start1-end3.5_r7,2026-09-28 00:10:55,LEFT,0,,
+e3_LOCAL_yolo320_r8,2026-09-28 00:11:44,RIGHT,1,,
+e3_HYBRID_ewma-hi1300-lo900_yolo320_spike-ms1500-start1-end3.5_r5,2026-09-28 00:12:35,LEFT,1,,
+e3_CLOUD_yolo320_outage-start1-end3_r15,2026-09-28 00:13:20,LEFT,0,,
+e3_HYBRID_ewma-hi1300-lo900_yolo320_spike-ms1500-start1-end3.5_r2,2026-09-28 00:14:09,RIGHT,1,,
+e3_HYBRID_cost-margin30_yolo320_outage-start1-end3_r6,2026-09-28 00:15:59,RIGHT,1,,
+e3_LOCAL_yolo320_r6,2026-09-28 00:16:58,RIGHT,1,,
+e3_HYBRID_cost-margin30_yolo320_outage-start1-end3_r9,2026-09-28 00:17:41,LEFT,1,,
+e3_HYBRID_cost-margin30_yolo320_spike-ms1500-start1-end3.5_r3,2026-09-28 00:18:26,LEFT,1,,
+e3_HYBRID_timeout-tau0.5_yolo320_outage-start1-end3_r2,2026-09-28 00:19:15,RIGHT,1,,
+e3_HYBRID_cost-margin30_yolo320_outage-start1-end3_r4,2026-09-28 00:19:48,RIGHT,1,,
+e3_HYBRID_timeout-tau0.5_yolo320_outage-start1-end3_r3,2026-09-28 00:20:32,LEFT,1,,
+e3_HYBRID_cost-margin30_yolo320_spike-ms1500-start1-end3.5_r8,2026-09-28 00:21:10,RIGHT,1,,
+e3_HYBRID_timeout-tau0.5_yolo320_spike-ms1500-start1-end3.5_r11,2026-09-28 00:22:02,LEFT,1,,
+e3_HYBRID_cost-margin30_yolo320_spike-ms1500-start1-end3.5_r2,2026-09-28 00:22:32,RIGHT,1,,
+e3_HYBRID_cost-margin30_yolo320_outage-start1-end3_r7,2026-09-28 00:23:20,LEFT,1,,bit wobbly but arrived
+e3_CLOUD_yolo320_spike-ms1500-start1-end3.5_r14,2026-09-28 00:24:13,RIGHT,0,,lost sign
+e3_HYBRID_timeout-tau0.5_yolo320_spike-ms1500-start1-end3.5_r2,2026-09-28 00:25:02,RIGHT,0,,lost it after spike
+e3_HYBRID_cost-margin30_yolo320_spike-ms1500-start1-end3.5_r12,2026-09-28 00:25:49,RIGHT,,,"not sure, stopped very close"
+e3_HYBRID_cost-margin30_yolo320_spike-ms1500-start1-end3.5_r6,2026-09-28 00:26:41,RIGHT,1,,
+e3_HYBRID_ewma-hi1300-lo900_yolo320_outage-start1-end3_r15,2026-09-28 00:27:24,LEFT,1,,
+e3_HYBRID_timeout-tau0.5_yolo320_outage-start1-end3_r9,2026-09-28 00:28:28,LEFT,0,,stopped and did not start again
+e3_HYBRID_timeout-tau0.5_yolo320_spike-ms1500-start1-end3.5_r9,2026-09-28 00:40:07,LEFT,1,,
+e3_HYBRID_ewma-hi1300-lo900_yolo320_outage-start1-end3_r6,2026-09-28 00:40:52,RIGHT,1,,
+e3_HYBRID_timeout-tau0.5_yolo320_spike-ms1500-start1-end3.5_r12,2026-09-28 00:41:39,RIGHT,0,,
+e3_HYBRID_ewma-hi1300-lo900_yolo320_outage-start1-end3_r13,2026-09-28 00:42:24,LEFT,1,,
+e3_LOCAL_yolo320_r5,2026-09-28 00:43:01,LEFT,1,,
+e3_HYBRID_ewma-hi1300-lo900_yolo320_outage-start1-end3_r11,2026-09-28 00:43:49,LEFT,1,,
+e3_HYBRID_cost-margin30_yolo320_spike-ms1500-start1-end3.5_r7,2026-09-28 00:44:48,LEFT,1,,
+e3_HYBRID_timeout-tau0.5_yolo320_outage-start1-end3_r6,2026-09-28 00:45:35,RIGHT,1,,
+e3_LOCAL_yolo320_r10,2026-09-28 00:47:18,RIGHT,1,,
+e3_HYBRID_cost-margin30_yolo320_outage-start1-end3_r15,2026-09-28 00:48:02,LEFT,1,,
+e3_CLOUD_yolo320_outage-start1-end3_r10,2026-09-28 00:49:05,RIGHT,1,,
+e3_HYBRID_cost-margin30_yolo320_spike-ms1500-start1-end3.5_r14,2026-09-28 00:51:25,RIGHT,0,,stopped and did not start again
+e3_HYBRID_ewma-hi1300-lo900_yolo320_outage-start1-end3_r14,2026-09-28 00:51:57,RIGHT,1,,
+e3_HYBRID_cost-margin30_yolo320_spike-ms1500-start1-end3.5_r1,2026-09-28 00:52:55,LEFT,1,,
+e3_HYBRID_timeout-tau0.5_yolo320_spike-ms1500-start1-end3.5_r3,2026-09-28 00:53:38,LEFT,0,,turned away from sign
+e3_HYBRID_timeout-tau0.5_yolo320_outage-start1-end3_r10,2026-09-28 00:54:39,RIGHT,1,,
+e3_HYBRID_ewma-hi1300-lo900_yolo320_spike-ms1500-start1-end3.5_r6,2026-09-28 00:55:29,RIGHT,1,,
+e3_HYBRID_cost-margin30_yolo320_outage-start1-end3_r13,2026-09-28 00:57:31,LEFT,1,,
+e3_HYBRID_cost-margin30_yolo320_spike-ms1500-start1-end3.5_r9,2026-09-28 00:58:29,LEFT,1,,
+e3_CLOUD_yolo320_spike-ms1500-start1-end3.5_r9,2026-09-28 01:00:16,LEFT,1,,
+e3_HYBRID_cost-margin30_yolo320_outage-start1-end3_r8,2026-09-28 01:00:58,RIGHT,1,,
+e3_HYBRID_ewma-hi1300-lo900_yolo320_spike-ms1500-start1-end3.5_r4,2026-09-28 01:01:46,RIGHT,1,,
+e3_HYBRID_timeout-tau0.5_yolo320_spike-ms1500-start1-end3.5_r15,2026-09-28 01:02:45,LEFT,1,,
+e3_CLOUD_yolo320_outage-start1-end3_r11,2026-09-28 01:03:17,LEFT,1,,
+e3_HYBRID_ewma-hi1300-lo900_yolo320_outage-start1-end3_r8,2026-09-28 01:04:15,RIGHT,1,,"switched and continued, good"
+e3_HYBRID_ewma-hi1300-lo900_yolo320_outage-start1-end3_r4,2026-09-28 01:05:10,RIGHT,1,,
+e3_LOCAL_yolo320_r1,2026-09-28 01:05:54,LEFT,1,,
+e3_HYBRID_ewma-hi1300-lo900_yolo320_spike-ms1500-start1-end3.5_r14,2026-09-28 01:06:25,RIGHT,1,,
+e3_HYBRID_ewma-hi1300-lo900_yolo320_outage-start1-end3_r12,2026-09-28 01:07:15,RIGHT,1,,perfect run
+e3_HYBRID_timeout-tau0.5_yolo320_outage-start1-end3_r1,2026-09-28 01:07:56,LEFT,0,,turned away from sign
+e3_HYBRID_ewma-hi1300-lo900_yolo320_outage-start1-end3_r9,2026-09-28 01:08:46,LEFT,1,,bit wobbly but arrived
+e3_HYBRID_timeout-tau0.5_yolo320_spike-ms1500-start1-end3.5_r10,2026-09-28 01:09:40,RIGHT,0,,stopped and did not start again
+e3_HYBRID_ewma-hi1300-lo900_yolo320_outage-start1-end3_r1,2026-09-28 01:10:27,LEFT,1,,
+e3_HYBRID_timeout-tau0.5_yolo320_outage-start1-end3_r8,2026-09-28 01:11:20,RIGHT,0,,"lost sign, stopped"
+e3_LOCAL_yolo320_r15,2026-09-28 01:12:12,LEFT,1,,perfect run
+e3_HYBRID_ewma-hi1300-lo900_yolo320_outage-start1-end3_r3,2026-09-28 01:14:19,LEFT,,,"not sure, stopped very close"
+e3_HYBRID_timeout-tau0.5_yolo320_outage-start1-end3_r12,2026-09-28 01:15:30,RIGHT,1,,
+e3_HYBRID_timeout-tau0.5_yolo320_spike-ms1500-start1-end3.5_r1,2026-09-28 01:15:58,LEFT,1,,
+e3_CLOUD_yolo320_outage-start1-end3_r9,2026-09-28 01:17:03,LEFT,1,,
+e3_LOCAL_yolo320_r14,2026-09-28 01:17:43,RIGHT,1,,
+e3_HYBRID_cost-margin30_yolo320_spike-ms1500-start1-end3.5_r10,2026-09-28 01:18:38,RIGHT,1,,
+e3_LOCAL_yolo320_r9,2026-09-28 01:19:26,LEFT,1,,
+e3_HYBRID_cost-margin30_yolo320_outage-start1-end3_r2,2026-09-28 01:20:27,RIGHT,1,,
+e3_HYBRID_timeout-tau0.5_yolo320_spike-ms1500-start1-end3.5_r5,2026-09-28 01:21:11,LEFT,1,,
+e3_HYBRID_cost-margin30_yolo320_spike-ms1500-start1-end3.5_r13,2026-09-28 01:21:45,LEFT,1,,
+e3_CLOUD_yolo320_spike-ms1500-start1-end3.5_r1,2026-09-28 01:22:32,LEFT,1,,"stopped for a while, then found sign"
+e3_HYBRID_ewma-hi1300-lo900_yolo320_outage-start1-end3_r10,2026-09-28 01:23:28,RIGHT,1,,
+e3_HYBRID_cost-margin30_yolo320_spike-ms1500-start1-end3.5_r15,2026-09-28 01:24:04,LEFT,1,,
+e3_HYBRID_ewma-hi1300-lo900_yolo320_spike-ms1500-start1-end3.5_r13,2026-09-28 01:24:45,LEFT,1,,
+e3_CLOUD_yolo320_spike-ms1500-start1-end3.5_r5,2026-09-28 01:25:22,LEFT,0,,stopped and did not start again
+e3_HYBRID_ewma-hi1300-lo900_yolo320_spike-ms1500-start1-end3.5_r11,2026-09-28 01:26:28,LEFT,1,,
+e3_CLOUD_yolo320_outage-start1-end3_r5,2026-09-28 01:27:08,LEFT,0,,"lost sign, stopped"
+e3_HYBRID_cost-margin30_yolo320_outage-start1-end3_r1,2026-09-28 01:27:44,LEFT,1,,
+e3_HYBRID_timeout-tau0.5_yolo320_spike-ms1500-start1-end3.5_r6,2026-09-28 01:28:40,RIGHT,0,,lost it after spike
+e3_HYBRID_ewma-hi1300-lo900_yolo320_spike-ms1500-start1-end3.5_r8,2026-09-28 01:30:54,RIGHT,1,,
+e3_LOCAL_yolo320_r11,2026-09-28 01:31:37,LEFT,1,,
+e3_HYBRID_ewma-hi1300-lo900_yolo320_outage-start1-end3_r5,2026-09-28 01:32:13,LEFT,1,,
+e3_LOCAL_yolo320_r4,2026-09-28 01:33:08,RIGHT,1,,perfect run
+e3_HYBRID_ewma-hi1300-lo900_yolo320_spike-ms1500-start1-end3.5_r9,2026-09-28 01:33:58,LEFT,0,,turned away from sign
+e3_CLOUD_yolo320_outage-start1-end3_r7,2026-09-28 01:34:48,LEFT,1,,"stopped and waited, then ok"
+e3_HYBRID_timeout-tau0.5_yolo320_outage-start1-end3_r11,2026-09-28 01:35:40,LEFT,1,,
+e3_HYBRID_timeout-tau0.5_yolo320_outage-start1-end3_r13,2026-09-28 01:36:29,LEFT,1,,small hesitation then ok
+e3_LOCAL_yolo320_r7,2026-09-28 01:37:13,LEFT,1,,
+e3_HYBRID_timeout-tau0.5_yolo320_spike-ms1500-start1-end3.5_r7,2026-09-28 01:37:58,LEFT,0,,lost it after spike
+e3_HYBRID_timeout-tau0.5_yolo320_outage-start1-end3_r14,2026-09-28 01:38:47,RIGHT,1,,
+e3_HYBRID_timeout-tau0.5_yolo320_outage-start1-end3_r7,2026-09-28 01:39:48,LEFT,1,,
+e3_CLOUD_yolo320_spike-ms1500-start1-end3.5_r15,2026-09-28 01:40:33,LEFT,1,,

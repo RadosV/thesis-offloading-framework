@@ -1,0 +1,4 @@
+t,run_id,from_brain,to_brain,cloud_silence_s,t_rel,cloud_stale_ms,local_stale_ms,reason,policy_state
+1790549600.1806,e3_HYBRID_timeout-tau0.5_yolo320_spike-ms1500-start1-end3.5_r3,LOCAL,CLOUD,0.0261,0.000,88.9,1231.8,cloud alive,
+1790549601.5807,e3_HYBRID_timeout-tau0.5_yolo320_spike-ms1500-start1-end3.5_r3,CLOUD,LOCAL,0.5271,1.400,579.7,1726.1,silence,
+1790549602.8305,e3_HYBRID_timeout-tau0.5_yolo320_spike-ms1500-start1-end3.5_r3,LOCAL,CLOUD,0.0000,2.650,1620.6,1125.5,cloud alive,
