@@ -2,7 +2,7 @@
 """
 pc_edge_brain.py  -- runs on the PC / edge server
 =================================================
-VERSION 2 (framework-based).
+Edge brain of the offloading framework.
 
 Role: the offloaded ("cloud") brain. Receives frames from the Pi via ImageZMQ,
 runs the perception module named in the frame header (the SAME code as the
@@ -13,10 +13,10 @@ true end-to-end decision age.
   python pc_edge_brain.py                        # broker = Pi at 192.168.2.106
   python pc_edge_brain.py --broker 192.168.2.106 --no-show
 
-Fixes against v1:
-  * MQTT network loop runs (loop_start): keep-alive pings + automatic reconnect.
-    v1 never started the loop, so the broker silently dropped the connection
-    after ~90 s without traffic and decisions were lost while video kept flowing.
+Design notes:
+  * The MQTT network loop runs (loop_start): keep-alive pings and automatic reconnect.
+    Without it, the broker drops the connection after ~90 s without traffic, and
+    decisions are lost silently while the video stream keeps working.
   * Reply to the Pi AFTER processing a frame: natural flow control, no queue of
     old frames building up when inference is slower than the frame rate.
 """

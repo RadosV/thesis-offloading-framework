@@ -8,4 +8,4 @@ aruco_dict = aruco.getPredefinedDictionary(aruco.DICT_4X4_50)
 marker_image = aruco.generateImageMarker(aruco_dict, 0, 200)
 
 cv2.imwrite("marker_0.png", marker_image)
-print("marker_0.png saved! Open this on your phone to test.")
+print("marker_0.png saved.")

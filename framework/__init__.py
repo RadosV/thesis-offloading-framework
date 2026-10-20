@@ -1,5 +1,5 @@
 """
-Latency-aware offloading framework (v2).
+Latency-aware offloading framework.
 
 Shared building blocks used by the Pi hybrid manager, the edge brain, the
 experiment runner and the benchmarks:

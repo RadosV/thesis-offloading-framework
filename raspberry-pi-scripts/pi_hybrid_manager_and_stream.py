@@ -2,7 +2,7 @@
 """
 pi_hybrid_manager_and_stream.py  -- runs on the Raspberry Pi
 ============================================================
-VERSION 2 (framework-based, experiment-instrumented).
+Hybrid manager of the offloading framework, instrumented for the experiments.
 
 Role: the orchestrator. Once per control cycle (LOOP_HZ) it
   1. takes the newest camera frame (camera thread),
@@ -23,7 +23,7 @@ Environment knobs (all set by run_experiments.py):
   MAX_S        auto-stop after this many seconds, 0 = until Ctrl-C
   ARRIVE_W     auto-stop when the target is >= ARRIVE_W px wide in ARRIVE_K new detections
   DET_HOLD_MS  keep the last direction this long when a frame has no detection; bridges
-               YOLO dropouts, applied identically to BOTH tiers (0 = off, v1 behaviour)
+               YOLO dropouts, applied identically to BOTH tiers (0 = off)
   CAPTURE/CROP camera resolution and central crop (digital zoom), e.g. 1280x720 + 0.3
                narrows a 90 deg webcam to ~33 deg so a distant target covers more pixels
   RUN_ID, NET_COND, LOG_DIR, PC_IP, SOURCE (camera index or file), SEED, PREFLIGHT_S
@@ -140,9 +140,9 @@ def _close_sender(sender):
 
 class Streamer(threading.Thread):
     """Offload uplink. Sends the newest frame to the edge brain in its own thread,
-    so a slow or dead PC never blocks the control loop (v1 streamed synchronously:
-    while the PC was down every cycle waited for the send timeout and the local
-    fallback ran at ~3 Hz). The edge brain replies after processing, which gives
+    so a slow or unreachable PC never blocks the control loop (sending synchronously
+    would make every cycle wait for the send timeout while the PC is down, and the
+    onboard fallback would slow down to ~3 Hz). The edge brain replies after processing, which gives
     natural flow control: frames that arrive meanwhile are skipped, not queued."""
 
     def __init__(self, camera, address, perception_spec, jpeg_q, max_hz):
@@ -527,7 +527,7 @@ def _raise_interrupt(signum, frame):
 def main():
     signal.signal(signal.SIGTERM, _raise_interrupt)
     os.makedirs(LOG_DIR, exist_ok=True)
-    print("=== EXPERIMENT RUN (v2) ===")
+    print("=== EXPERIMENT RUN ===")
     print("  strategy  : %s   policy: %s   standby: %s" % (
         STRATEGY, POLICY_SPEC if STRATEGY == "HYBRID" else "-", STANDBY if STRATEGY == "HYBRID" else "-"))
     print("  perception: %s   net: %s + %g ms   jpeg: %d" % (PERCEPTION_SPEC, NET_PROFILE, INJECT_MS, JPEG_Q))

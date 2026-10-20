@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Experiment runner, VERSION 2. Run ON THE PI.
+Experiment runner. Run on the Raspberry Pi.
 Start pc_edge_brain.py on the PC first (and motor_controller.py on the Pi for driving runs).
 
   python3 run_experiments.py e1        # E1  power/CPU per mode, car on a box, 60 s runs (RQ2)
@@ -42,34 +42,20 @@ LOG_DIR = os.environ.get("LOG_DIR", os.path.join(HERE, "experiment_logs"))
 NOTES = os.path.join(LOG_DIR, "runs_notes.csv")
 SEED = 2026
 
-# ---- Settings to fix after E1 / calibration (see TODO.md) -------------------
-# Measured 16.09: YOLOv5n per frame - Pi 249 / 472 / 991 ms at 160 / 224 / 320,
-# PC 7 / 13 / 26 ms, ArUco 6.3 ms on the Pi. Only @320 sees the sign from a
-# useful distance, so the driving blocks use @320; 160/224 stay in the E1 bench.
-# Local decisions are therefore ~1.5 s old and cloud decisions ~0.1 s, which puts
-# the expected crossover near 1.3 s - hence the sweep and thresholds below.
+# ---- Experiment settings ------------------------------------------------------
+# YOLOv5n takes about 1 s per image on the Pi at 320 px input and about 25 ms on the PC.
+# Only the 320 px model detects the stop sign from the start mark (180 cm), so all
+# driving blocks use it. The 160 and 224 px models are used in the benchmark and in E1.
 YOLO = "yolo:320"
 # Target width (px) that counts as 'arrived' (0 = no auto-stop, run ends at MAX_S).
-# Re-measured 20.09: reliable detection at ~195 cm (56-59 px, score 0.47-0.55, 5/5 frames), so the
-# 17.09 "135 cm limit" was too conservative; start mark moved to 180 cm. Measured 17.09:
-# 86 px at 135 cm,
-# 102 px at 110 cm (old start mark, score ~0.87), 185 px at 50 cm (score 0.32, last reliable distance -
-# closer than that the sign leaves the top of the narrow view). Arrival at 170 px ~ 55 cm; the
-# ultrasonic reflex at 30 cm is the backstop. The usable window is ~63 px (180 cm start) to 185 px (50 cm,
-# last distance the raised sign stays in the narrow view), so arrival is declared at 150 px ~ 70 cm:
-# high enough not to fire at the start line, low enough to fire before the sign leaves the view.
-# The manual p/f score stays the authoritative success metric.
-# 150 px ~ 78 cm. Measured 21.09 over 18 runs: successful runs reach 250-288 px (41-47 cm),
-# marginal ones 170-183 px, genuine failures top out at ~90 px (~130 cm). 150 separates them
-# and fires on every run that gets near the sign; 200/250 lost t_arrive on marginal runs.
-# ArUco measured 29.09: 37 px at the 180 cm mark (scale ~6700 px*cm), x~158, y~84.
-# 86 px ~ 78 cm, the SAME physical arrival point as the stop sign at 150 px - so E3'
-# and E3 declare arrival at the same distance and the blocks stay comparable.
+# Stop sign: about 63 px at the 180 cm start mark, and it stays fully in view down to
+# about 185 px (50 cm). 150 px (about 70-78 cm) does not fire at the start line, fires
+# before the sign leaves the view, and separates successful runs from failed ones.
+# ArUco marker: 86 px corresponds to the same physical distance, so E3 and E3' declare
+# arrival at the same point. The ultrasonic safety stop at 30 cm is the backstop.
 ARRIVE_W = {"aruco": 86, "yolo": 150}
-EWMA_HI, EWMA_LO = 1300, 900          # ms; E2 (21.09) measured the crossover at ~1100 ms, which these bracket
-# Disturbance windows must cover the APPROACH. E2 runs arrive in ~4.1 s at 0 ms, so the
-# original start=3 windows only delayed decisions that landed after arrival - E3 would have
-# come out flat, like the first E2 block. Now they open at t=1 s, mid-approach.
+EWMA_HI, EWMA_LO = 1300, 900          # ms; P1 limits on either side of the measured crossover (~1100 ms)
+# Disturbance windows start at t = 1 s so that they fall into the approach to the target.
 SPIKE = "spike:ms=1500,start=1,end=3.5"  # 1500 ms > the ~1100 ms crossover: cloud should lose
 OUTAGE = "outage:start=1,end=3"
 JITTER = "jitter:mean=150,sd=80"

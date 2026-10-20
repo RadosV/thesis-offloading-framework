@@ -1,7 +1,7 @@
 """
 motor_controller.py  -- runs on the Raspberry Pi
 =================================================
-FINAL VERSION.
+
 
 Role: the ONLY component that drives the actuators. Subscribes to the control
 topic, maps command strings to PWM, enforces the ultrasonic safety reflex, and
@@ -12,7 +12,7 @@ Commands understood: forward | left | right | stop
 part of the abandoned 'go around the marker' approach and are not used.)
 
 Environment:
-  US_FAIL_SAFE=1   stop when the ultrasonic sensor stops responding (default: off = v1 behaviour,
+  US_FAIL_SAFE=1   stop when the ultrasonic sensor stops responding (default: off, i.e. a silent sensor is treated as a clear path,
                    a silent sensor counts as 'path clear'; a warning is printed either way)
   CRUISE_SPEED     forward pulse width in us (default 1560); ESC_NEUTRAL for the stop value
   THROTTLE_DUTY    <1 pulses the throttle to drive slower than the ESC's own minimum,
@@ -43,8 +43,8 @@ ECHO_PIN = 24
 #   CRUISE_SPEED=1620 python3 motor_controller.py
 # On the floor the car needs more throttle than with the wheels in the air.
 ESC_NEUTRAL = int(os.environ.get("ESC_NEUTRAL", "1500"))      # true stop on this ESC
-CRUISE_SPEED = int(os.environ.get("CRUISE_SPEED", "1530"))    # slow forward: measured on the
-# floor 17.09 - 1560 was too fast to control at ~1 decision/s, 1530 rolls slowly and steadily
+CRUISE_SPEED = int(os.environ.get("CRUISE_SPEED", "1530"))    # slowest pulse that moves the car
+# steadily on the floor (faster settings were hard to control at ~1 decision/s)
 # A brushed ESC has a minimum throttle below which the car does not move at all. To drive
 # slower than that, pulse between cruise and neutral and let the car coast in between.
 THROTTLE_DUTY = float(os.environ.get("THROTTLE_DUTY", "1"))
@@ -90,7 +90,7 @@ pi.set_mode(ECHO_PIN, pigpio.INPUT)
 write_api = None
 if INFLUX_TOKEN:
     # Batching (non-blocking) writes: a slow or unreachable InfluxDB must never
-    # delay the safety loop. v1 wrote synchronously to the cloud every 100 ms.
+    # delay the safety loop.
     from influxdb_client import InfluxDBClient, Point, WriteOptions
     write_api = InfluxDBClient(url=INFLUX_URL, token=INFLUX_TOKEN, org=INFLUX_ORG).write_api(
         write_options=WriteOptions(batch_size=50, flush_interval=1000))

@@ -10,7 +10,7 @@ and returns which brain drives: "CLOUD" or "LOCAL". `reason` explains the last
 switch and `state()` is written to the per-cycle log.
 
 Policies (POLICY env var):
-  timeout:tau=0.5              v1 baseline: cloud while silence < tau
+  timeout:tau=0.5              baseline: cloud while silence < tau
   ewma:hi=300,lo=200,k=5       latency-aware: EWMA of cloud age with hysteresis
   cost:margin=30,k=5           cost model (literature): offload iff the cloud
                                delivers fresher decisions than local execution,
@@ -51,7 +51,7 @@ class Policy:
 
 
 class FixedTimeout(Policy):
-    """v1 baseline: use the cloud while its last decision arrived less than tau s ago.
+    """Baseline: use the cloud while its last decision arrived less than tau s ago.
     Detects outages, but is blind to a constant added latency."""
     name = "timeout"
 

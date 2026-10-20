@@ -1,7 +1,7 @@
 """
 Standalone ESC/servo tester. No MQTT, no vision, no threads.
 Run on the Pi:  python3 esc_test.py
-Tells us the TRUE neutral and forward values for your hardware.
+Finds the neutral and forward pulse widths of the ESC and servo.
 """
 import pigpio
 import time

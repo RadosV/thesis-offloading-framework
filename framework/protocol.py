@@ -12,7 +12,7 @@ message = text header + byte buffer. The header is compact JSON:
 
 Downlink (MQTT rados/robot/cloud_cmd): compact JSON
     {"cmd": "left", "fid": 17, "t_cap": 1779730845.247, "infer_ms": 12.3, "vis": 1, "cx": 101.5, "w": 42.0}
-  A plain command string (v1 edge brain) is still accepted.
+  A plain command string is also accepted.
 """
 
 import json
@@ -49,7 +49,7 @@ def parse_frame_header(msg):
     try:
         header = json.loads(msg)
     except (TypeError, ValueError):
-        return {}                  # v1 Pi: the message is just the host name
+        return {}                  # no JSON header (e.g. only a host name)
     return header if isinstance(header, dict) else {}
 
 
